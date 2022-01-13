@@ -30,19 +30,45 @@ while (i <= 5) {
     }
 }
 
-
 result.innerText = sum; */
 
 // ! Snack 2
 
-/* Inserisci un numero, se è pari stampa il numero, se è dispari stampa in numero successivo */
+/* Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo */
 
+const result = document.getElementById('result');
+const number = parseInt(prompt('Inserisci un numero', '5'));
 
+let typeNumber = number;
+
+if (typeNumber % 2 === 0) {
+    console.log(typeNumber)
+} else {
+    typeNumber += 1;
+    console.log(typeNumber);
+}
+
+result.innerText = typeNumber;
 
 // ! Snack 3 
 
 /* Generatori di "nomi cognomi" casuali: prendendo una lista di nomi e una lista di cognomi,
 Gatsby vuole generare una lista di 3 invitati. */
+
+/* const invite = [];
+let firstName = ['Marco', 'Martina', 'Alessio'];
+console.log(firstName);
+let lastName = ['Salvatore', 'Polimeno', 'Garifo'];
+console.log(lastName);
+
+let numberInvite;
+let i = 0;
+
+while (invite < 3) {
+    firstName = Math.floor(Math.random() * 2);
+    lastName = Math.floor(Math.random() * 2);
+    i++
+} */
 
 // ! Snack 4
 
