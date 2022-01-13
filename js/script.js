@@ -6,9 +6,38 @@ console.log('JS OK!')
 Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma in due versioni, con il for e con il while. */
 
+/* const result = document.getElementById('result');
+let sum = 0; */
+
+// # Eseguire con il ciclo while
+/* let  i = 1;
+while (i <= 5) {
+    const number = parseInt(prompt('Inserisci un numero', '5'));
+    if (!isNaN(number)) {
+        sum += number;
+        console.log(sum);
+    }
+    i++
+} */
+
+// # Eseguire con il ciclo for
+
+/* for (let i = 1; i <= 5; i++) {
+    const number = parseInt(prompt('Inserisci un numero', '5'));
+    if (!isNaN(number)) {
+        sum += number;
+        console.log(sum);
+    }
+}
+
+
+result.innerText = sum; */
+
 // ! Snack 2
 
 /* Inserisci un numero, se è pari stampa il numero, se è dispari stampa in numero successivo */
+
+
 
 // ! Snack 3 
 
