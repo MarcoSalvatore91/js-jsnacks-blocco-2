@@ -36,7 +36,7 @@ result.innerText = sum; */
 
 /* Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo */
 
-const result = document.getElementById('result');
+/* const result = document.getElementById('result');
 const number = parseInt(prompt('Inserisci un numero', '5'));
 
 let typeNumber = number;
@@ -48,31 +48,32 @@ if (typeNumber % 2 === 0) {
     console.log(typeNumber);
 }
 
-result.innerText = typeNumber;
+result.innerText = typeNumber; */
 
 // ! Snack 3 
 
 /* Generatori di "nomi cognomi" casuali: prendendo una lista di nomi e una lista di cognomi,
 Gatsby vuole generare una lista di 3 invitati. */
 
-/* const invite = [];
-let firstName = ['Marco', 'Martina', 'Alessio'];
-console.log(firstName);
-let lastName = ['Salvatore', 'Polimeno', 'Garifo'];
-console.log(lastName);
-
-let numberInvite;
-let i = 0;
-
-while (invite < 3) {
-    firstName = Math.floor(Math.random() * 2);
-    lastName = Math.floor(Math.random() * 2);
-    i++
-} */
-
 // ! Snack 4
 
 /* Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari */
+
+const result = document.getElementById('result');
+const number = [3, 24, 45, 49, 57, 64, 72, 83, 89, 97];
+
+let sum = 0;
+let i = 0;
+
+while (i < number.lenght) {
+    if (i % 2 !== 0) {
+        sum += number[i];
+        console.log(sum)
+    }
+    i++
+}
+
+result.innerHTML = sum;
 
 // ! Snack 5
 
